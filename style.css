@@ -1,0 +1,125 @@
+:root {
+  --bg-main: #ddedf9;      
+  --accent-pink: #ffedf5; 
+  --accent-yellow: #fff1b6; 
+  --text-main: #737373;
+}
+
+
+body{
+  margin: 0;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comic Neue", "Comic Sans MS";
+  background: white;
+  color: var(--text-main);
+}
+
+
+.device{
+  width: 500px;
+  height: 520px;
+  padding: 30px;
+  background: var(--bg-main);
+  border: 2px solid var(--text-main);
+  border-radius: 50px;
+  text-align: center;
+}
+
+h1{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.screen{
+  background: var(--accent-pink);
+  border-radius: 30px;
+  padding: 20px;
+  height: 300px;
+}
+
+.stats{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.stat{
+  width: 40%;
+  text-align: left;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.bar{
+  position: relative;
+  height: 22px;
+  background: var(--accent-yellow);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+
+.bar .label{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  z-index: 2;
+}
+
+.actions{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  background: var(--accent-yellow);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-family: "Comic Neue";
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 1px gray ;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:active{
+  transform: translateY(2px);
+  box-shadow: 0 0 0;
+}
+
+.fill{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+  z-index: 1;
+  background: linear-gradient(90deg, #6bbcff, #9fd3ff);
+}
+
+
+
+.fill.normal{
+  background: linear-gradient(90deg, #cfd9df, #e2ebf0);
+}
+
+.fill.good{
+  background: linear-gradient(90deg, #6bcf63, #b8f2b8);
+}
+
+.fill.low{
+  background: linear-gradient(90deg, #ff9a9e, #ffb3b3);
+}
+
