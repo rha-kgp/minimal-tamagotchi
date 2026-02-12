@@ -44,6 +44,9 @@ h1{
 .stats{
   display: flex;
   justify-content: space-around;
+
+  height: 30px;
+  
 }
 
 
@@ -110,7 +113,7 @@ button:active{
 }
 
 
-
+/*
 .fill.normal{
   background: linear-gradient(90deg, #cfd9df, #e2ebf0);
 }
@@ -122,4 +125,47 @@ button:active{
 .fill.low{
   background: linear-gradient(90deg, #ff9a9e, #ffb3b3);
 }
+*/
 
+.pet-container{
+  height: 260px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pixel-wrapper{
+  height: 100px;
+  width: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pixel-pet{
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  
+  position: relative;
+  transform: translate(-48px, -10px) scale(1.2);
+  box-shadow: 
+    20px 0px #303030, 30px 0px #303030, 40px 0px #303030, 50px 0px #303030, 60px 0px #303030, 70px 0px #303030,
+    10px 10px #303030, 80px 10px #303030, 
+    0px 20px #303030, 30px 20px black, 60px 20px black, 90px 20px #303030, 
+    0px 30px #303030, 90px 30px #303030, 
+    0px 40px #303030, 40px 40px black, 50px 40px black,90px 40px #303030, 
+    0px 50px #303030, 90px 50px #303030, 
+    0px 60px #303030, 90px 60px #303030, 
+    10px 70px #303030, 80px 70px #303030, 
+    20px 80px #303030, 30px 80px #303030, 40px 80px #303030, 50px 80px #303030, 60px 80px #303030, 70px 80px #303030;
+
+  
+  transform-origin: top left;
+  image-rendering: pixelated;
+}
