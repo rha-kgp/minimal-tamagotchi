@@ -145,11 +145,12 @@ button:active{
   transform: scale(1.2);
 }
 
-
+/*--- base pet (common)---*/
 .pixel-pet{
   width: 10px;
   height: 10px;
   background: transparent;
+  image-rendering: pixelated;
   
   box-shadow: 
     20px 0px #303030, 30px 0px #303030, 40px 0px #303030, 50px 0px #303030, 60px 0px #303030, 70px 0px #303030,
@@ -162,5 +163,24 @@ button:active{
     10px 70px #303030, 80px 70px #303030, 
     20px 80px #303030, 30px 80px #303030, 40px 80px #303030, 50px 80px #303030, 60px 80px #303030, 70px 80px #303030;
 
-  image-rendering: pixelated;
+  
+
+  /*--- animation settings ---*/
+  animation: idle-bounce 1s steps(2, start) infinite;
+  /*animation: idle-bounce 2s infinite;*/
+}
+
+/*--- idle bounce animation ---*/
+@keyframes idle-bounce{
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-4px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
 }
