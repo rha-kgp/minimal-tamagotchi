@@ -19,7 +19,7 @@ function decay(){
   happiness = updateBar(happiness - 1, happinessBar);
 }
 
-setInterval(decay, 3000);
+setInterval(decay, 10000);
 
 function feed(){
   console.log("feed run")

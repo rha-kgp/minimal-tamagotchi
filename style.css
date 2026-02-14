@@ -139,11 +139,10 @@ button:active{
 
 .pixel-wrapper{
   height: 100px;
-  width: 100px;
+  width: 90px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  transform: scale(1.2);
 }
 
 
@@ -152,8 +151,6 @@ button:active{
   height: 10px;
   background: transparent;
   
-  position: relative;
-  transform: translate(-48px, -10px) scale(1.2);
   box-shadow: 
     20px 0px #303030, 30px 0px #303030, 40px 0px #303030, 50px 0px #303030, 60px 0px #303030, 70px 0px #303030,
     10px 10px #303030, 80px 10px #303030, 
@@ -165,7 +162,5 @@ button:active{
     10px 70px #303030, 80px 70px #303030, 
     20px 80px #303030, 30px 80px #303030, 40px 80px #303030, 50px 80px #303030, 60px 80px #303030, 70px 80px #303030;
 
-  
-  transform-origin: top left;
   image-rendering: pixelated;
 }
